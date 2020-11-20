@@ -9,7 +9,10 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 0;
+  background-color: rgba(145, 204, 171, 0.3);
+  z-index: 2;
+  padding-bottom: 20px;
 }
 
 .navbar {
@@ -22,6 +25,14 @@ body {
   display: flex;
   margin-top: 26px;
   float: right;
+  text-decoration: none;
+}
+
+.navitem {
+  color: white;
+  font-family: Roboto, sans-serif;
+  margin: 10px 20px;
+  font-weight: 550;
   text-decoration: none;
 }
 
@@ -56,19 +67,12 @@ body {
   margin-left: 0px;
 }
 
-.navitem {
-  color: white;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin: 10px 20px;
-}
-
 .topPurple {
   background-color: #331a5c;
   background-image: url(https://www.kastapp.co/images/gradient-violet-bg.jpg);
   height: 100vh;
-  padding-top: 140px;
-  padding-bottom: 110px;
+  padding-top: 180px;
+  padding-bottom: 170px;
   width: 100%;
   min-height: auto;
   margin-top: -80px;
@@ -111,6 +115,7 @@ body {
   margin-right: auto;
   max-width: 70%;
   line-height: 30px;
+  padding-top: 15px;
 }
 
 .computor-img {
@@ -121,8 +126,8 @@ body {
 }
 
 .button {
-  min-width: 215px;
-  padding: 10px 30px;
+  min-width: 225px;
+  padding: 10px 40px;
   float: none;
   clear: both;
   border-style: solid;
@@ -146,14 +151,47 @@ body {
   object-fit: fill;
 }
 
-/* .topSectionPurple {
-  /* background-color: #331a5c; */
-/* background-image: url(https://www.kastapp.co/images/gradient-violet-bg.jpg); 
-  height: 100vh;
-  width: 100%;
-  min-height: auto;
-  margin-top: -80px;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
-} */
+.sectionWhite {
+  background-color: white;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  align-items: center;
+  margin: 0 auto;
+  width: 70vw;
+}
+
+.headingWhiteSection {
+  color: #434146;
+  text-align: center;
+
+  margin-bottom: 55px;
+}
+
+.gridFeaturedBrands {
+  display: grid;
+  grid-column-gap: 60px;
+  grid-row-gap: 100px;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 82px;
+  -webkit-box-align: center;
+}
+
+.quote {
+  font-family: Roboto, sans-serif;
+  color: #434146;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  font-style: italic;
+}
+
+.quoteSource {
+  font-family: Roboto, sans-serif;
+  color: #434146;
+  font-size: 17px;
+  display: block;
+  text-align: right;
+  font-style: italic;
+  margin-right: 8em;
+}
