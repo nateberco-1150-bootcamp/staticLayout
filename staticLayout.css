@@ -30,6 +30,7 @@ body {
 
 .navitem {
   color: white;
+  text-decoration: none;
   font-family: Roboto, sans-serif;
   margin: 10px 20px;
   font-weight: 550;
@@ -53,8 +54,8 @@ body {
   letter-spacing: 1.5px;
   text-transform: uppercase;
   vertical-align: top;
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 
 .logo {
@@ -65,6 +66,11 @@ body {
   height: auto;
   margin-top: 18px;
   margin-left: 0px;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .topPurple {
